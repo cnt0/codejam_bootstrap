@@ -1,0 +1,15 @@
+#include <algorithm>
+#include <iostream>
+#include <numeric>
+#include <vector>
+#include <cstdio>
+
+using namespace std;
+
+int main() {
+#ifdef @MY_MOTTO@
+  freopen("../sample.txt", "r", stdin);
+#endif
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+}

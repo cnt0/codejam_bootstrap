@@ -1,0 +1,9 @@
+set(CMAKE_C_COMPILER "@CMAKE_C_COMPILER@")
+set(CMAKE_CXX_COMPILER "@CMAKE_CXX_COMPILER@")
+
+cmake_minimum_required(VERSION 3.9)
+project(@X@ LANGUAGES CXX)
+
+add_executable(${PROJECT_NAME} main.cpp)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_14)
+target_compile_definitions(${PROJECT_NAME} PRIVATE "$<$<CONFIG:Debug>:@MY_MOTTO@>")
